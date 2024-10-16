@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZGWlzMEO7D1/xXdm7pVOxVrwcHErfuhU6U9U7dz3mMeXD89n5bT79O3Wvx7S2bACKJ7GxhPNn2AFs2yRz7xKtA==",
+  "dgSpecHash": "PreVdHe7I490/rSMTVlgroeknai29xaJh40HUHyG4a+5t1MOqvwf1/0ExVeAiGGur8weag0/FvWxDR12jCVxVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\Database\\Database.csproj",
+  "projectFilePath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\Database\\Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Florian\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Florian\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

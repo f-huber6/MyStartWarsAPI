@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UqnKJ5QM2b5Mxm0F1jEo5JBZvNQ7/udwRAdsKMdt32hYx7lxMJB1blI3pxR/sFx9LvT84rMqYATTMYLPwF3f7A==",
+  "dgSpecHash": "FBhuqMgppSI5q94R3F4vcbUcqNCWXWIGuHYdppwEfbdJ7flv/J1VMByuLssvUYVB58vVSTFeAI/uRgPnYvIKwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\StarWarsAPI\\StarWarsAPI.csproj",
+  "projectFilePath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\StarWarsAPI\\StarWarsAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Florian\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Florian\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

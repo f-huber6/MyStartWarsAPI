@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FbfkVi72Ku/Uz41rfWKJpMcxBUv68wUB3+XI7MJXlmh+HyxR8XDYViV+8VQdf7lt/HKFlxWqMWyiSpIAeLtriA==",
+  "dgSpecHash": "CMlAY0nKsOONjUqt2boJjG4FFc0030s6Vf08IQh8iB/GRyurvVnlPVqq4X8ZbPuWscyYR2u2Ce6rMWLRjMwDBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\UnitTestStarWars\\UnitTestStarWars.csproj",
+  "projectFilePath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\UnitTestStarWars\\UnitTestStarWars.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Florian\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Florian\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\8.0.10\\microsoft.aspnetcore.mvc.testing.8.0.10.nupkg.sha512",

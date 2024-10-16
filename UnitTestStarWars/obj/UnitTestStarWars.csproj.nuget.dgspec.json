@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\UnitTestStarWars\\UnitTestStarWars.csproj": {}
+    "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\UnitTestStarWars\\UnitTestStarWars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\Database\\Database.csproj": {
+    "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\Database\\Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\Database\\Database.csproj",
+        "projectUniqueName": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\Database\\Database.csproj",
         "projectName": "Database",
-        "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\Database\\Database.csproj",
+        "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\Database\\Database.csproj",
         "packagesPath": "C:\\Users\\Florian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\Database\\obj\\",
+        "outputPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\Database\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Florian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\StarWarsAPI\\StarWarsAPI.csproj": {
+    "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\StarWarsAPI\\StarWarsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\StarWarsAPI\\StarWarsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\StarWarsAPI\\StarWarsAPI.csproj",
         "projectName": "StarWarsAPI",
-        "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\StarWarsAPI\\StarWarsAPI.csproj",
+        "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\StarWarsAPI\\StarWarsAPI.csproj",
         "packagesPath": "C:\\Users\\Florian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\StarWarsAPI\\obj\\",
+        "outputPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\StarWarsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Florian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,8 +95,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\Database\\Database.csproj"
+              "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\Database\\Database.csproj"
               }
             }
           }
@@ -149,14 +149,14 @@
         }
       }
     },
-    "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\UnitTestStarWars\\UnitTestStarWars.csproj": {
+    "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\UnitTestStarWars\\UnitTestStarWars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\UnitTestStarWars\\UnitTestStarWars.csproj",
+        "projectUniqueName": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\UnitTestStarWars\\UnitTestStarWars.csproj",
         "projectName": "UnitTestStarWars",
-        "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\UnitTestStarWars\\UnitTestStarWars.csproj",
+        "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\UnitTestStarWars\\UnitTestStarWars.csproj",
         "packagesPath": "C:\\Users\\Florian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\UnitTestStarWars\\obj\\",
+        "outputPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\UnitTestStarWars\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Florian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -173,11 +173,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\Database\\Database.csproj"
+              "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\Database\\Database.csproj"
               },
-              "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\StarWarsAPI\\StarWarsAPI.csproj": {
-                "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\StarWarsAPI\\StarWarsAPI.csproj"
+              "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\StarWarsAPI\\StarWarsAPI.csproj": {
+                "projectPath": "C:\\Users\\Florian\\Documents\\Schule_4A\\Dezentrale Systeme\\WebApplication2\\MyStartWarsAPI\\StarWarsAPI\\StarWarsAPI.csproj"
               }
             }
           }
