@@ -29,7 +29,9 @@ public class CharacterRepository
     {
         if (character != null)
         {
-            character.Id = 0;
+            var lastCharacter = await _context.Characters.OrderByDescending(c => c.Id).FirstOrDefaultAsync();
+            int newId = lastCharacter != null ? lastCharacter.Id + 1 : 1;
+            character.Id = newId;
             await _context.Characters.AddAsync(character);
         }
         await _context.SaveChangesAsync();
