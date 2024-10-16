@@ -15,5 +15,4 @@ public class Character
     public string? HomeWorld { get; set; }
     [StringLength(50)]
     public string? Species { get; set; }
-    
 }

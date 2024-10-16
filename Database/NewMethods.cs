@@ -13,22 +13,25 @@ public static class NewMethods
         }
 
         var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
-        var tableName = entityType.GetTableName();
+        if (entityType != null)
+        {
+            var tableName = entityType.GetTableName();
         
-        var nameProperty = typeof(TEntity).GetProperty(entityType.Name)?.GetValue(entity)?.ToString();
-        var factionProperty = typeof(TEntity).GetProperty("Faction")?.GetValue(entity)?.ToString();
-        var homeWorldProperty = typeof(TEntity).GetProperty("HomeWorld")?.GetValue(entity)?.ToString();
-        var speciesProperty = typeof(TEntity).GetProperty("Species")?.GetValue(entity)?.ToString();
+            var nameProperty = typeof(TEntity).GetProperty(entityType.Name)?.GetValue(entity)?.ToString();
+            var factionProperty = typeof(TEntity).GetProperty("Faction")?.GetValue(entity)?.ToString();
+            var homeWorldProperty = typeof(TEntity).GetProperty("HomeWorld")?.GetValue(entity)?.ToString();
+            var speciesProperty = typeof(TEntity).GetProperty("Species")?.GetValue(entity)?.ToString();
 
-        if (!String.IsNullOrEmpty(nameProperty) && !String.IsNullOrEmpty(factionProperty) && !String.IsNullOrEmpty(homeWorldProperty) && !String.IsNullOrEmpty(speciesProperty))
-        {
-            var sql =
-                $"Insert Into {tableName} (Name, Faction, HomeWorld, Species) Values (@Name, @Faction, @HomeWorld, @Species)";
-            await dbContext.Database.ExecuteSqlRawAsync(sql, nameProperty, factionProperty, homeWorldProperty, speciesProperty);
-        }
-        else
-        {
-            throw new InvalidOperationException("Values of entities cannot be null");
+            if (!String.IsNullOrEmpty(nameProperty) && !String.IsNullOrEmpty(factionProperty) && !String.IsNullOrEmpty(homeWorldProperty) && !String.IsNullOrEmpty(speciesProperty))
+            {
+                var sql =
+                    $"Insert Into {tableName} (Name, Faction, HomeWorld, Species) Values (@Name, @Faction, @HomeWorld, @Species)";
+                await dbContext.Database.ExecuteSqlRawAsync(sql, nameProperty, factionProperty, homeWorldProperty, speciesProperty);
+            }
+            else
+            {
+                throw new InvalidOperationException("Values of entities cannot be null");
+            }
         }
     }
 
