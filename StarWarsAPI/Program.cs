@@ -55,19 +55,18 @@ app.MapGet("/sw-characters/{id:int}", async (int id, [FromServices] CharacterRep
     var character = await rep.GetCharacterByIdAsync(id);
     if (character == null)
     {
-        Results.NotFound();
+        return Results.NotFound();
     }
     
     return Results.Ok(character);
 });
-
-app.MapPost("/sw-characters", async ([FromBody] Character character, [FromServices] CharacterRepository rep) =>
+ app.MapPost("/sw-characters", async ([FromBody] Character character, [FromServices] CharacterRepository rep) =>
 {
     await rep.AddAsync(character);
     return Results.Created($"/sw-characters/{character.Id}", character);
 });
 
-app.MapPut("/sw-characters/id:{int}", async (int id, Character character, [FromServices] CharacterRepository rep) =>
+app.MapPut("/sw-characters/{id:int}", async (int id, Character character, [FromServices] CharacterRepository rep) =>
 {
     var existingCharacterToChange = await rep.GetCharacterByIdAsync(id);
 
@@ -82,7 +81,7 @@ app.MapPut("/sw-characters/id:{int}", async (int id, Character character, [FromS
     return Results.Ok(character);
 });
 
-app.MapDelete("/sw-characters/id: {int}", async (int id, [FromServices] CharacterRepository rep) =>
+app.MapDelete("/sw-characters/{id:int}", async (int id, [FromServices] CharacterRepository rep) =>
 {
     var existingCharacterForDelete = await rep.GetCharacterByIdAsync(id);
 

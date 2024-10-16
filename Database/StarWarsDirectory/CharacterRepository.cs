@@ -32,7 +32,6 @@ public class CharacterRepository
             character.Id = 0;
             await _context.Characters.AddAsync(character);
         }
-
         await _context.SaveChangesAsync();
     }
 

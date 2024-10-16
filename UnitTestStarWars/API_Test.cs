@@ -3,14 +3,20 @@ using System.Net.Http.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using StarWarsAPI;
+using Xunit.Abstractions;
 
 namespace UnitTestStarWars;
 
 public class BasicTests : IClassFixture<WebApplicationFactory<Program>>
 {
     private readonly WebApplicationFactory<Program> _factory;
+    private readonly ITestOutputHelper _testOutputHelper;
 
-    public BasicTests(WebApplicationFactory<Program> factory) => _factory = factory;
+    public BasicTests(WebApplicationFactory<Program> factory, ITestOutputHelper testOutputHelper)
+    {
+        _factory = factory;
+        _testOutputHelper = testOutputHelper;
+    }
 
     [Fact]
     public async Task GetSwCharacters_ReturnOk()
@@ -44,6 +50,7 @@ public class BasicTests : IClassFixture<WebApplicationFactory<Program>>
         
         var response = await client.PostAsJsonAsync("/sw-characters", character);
         response.EnsureSuccessStatusCode();
+        _testOutputHelper.WriteLine(response.StatusCode.ToString());
         Assert.Equal(HttpStatusCode.Created, response.StatusCode);
     }
 
@@ -59,13 +66,17 @@ public class BasicTests : IClassFixture<WebApplicationFactory<Program>>
             Species = "Species1"
         };
 
-        var postResponse = await client.PostAsJsonAsync("/sw-characters/", character);
+        var postResponse = await client.PostAsJsonAsync("/sw-characters", character);
+        postResponse.EnsureSuccessStatusCode();
         var createdCharacter = await postResponse.Content.ReadFromJsonAsync<Character>();
 
-        createdCharacter!.Name = "Name1";
+
+        createdCharacter!.Name = "Huber";
+        _testOutputHelper.WriteLine(createdCharacter.Name);
         var putResponse = await client.PutAsJsonAsync($"/sw-characters/{createdCharacter.Id}", createdCharacter);
         putResponse.EnsureSuccessStatusCode();
         Assert.Equal(HttpStatusCode.OK, putResponse.StatusCode);
+        
     }
 
     [Fact]
@@ -83,9 +94,18 @@ public class BasicTests : IClassFixture<WebApplicationFactory<Program>>
         var postResponse = await client.PostAsJsonAsync("/sw-characters", character);
         var createdCharacter = await postResponse.Content.ReadFromJsonAsync<Character>();
 
-        var deleteRespone = await client.DeleteAsync($"/sw-characters/id:{createdCharacter.Id}");
-        deleteRespone.EnsureSuccessStatusCode();
-        
-        Assert.Equal(HttpStatusCode.OK, deleteRespone.StatusCode);
+        var deleteResponse = await client.DeleteAsync($"/sw-characters/{createdCharacter?.Id}");
+        deleteResponse.EnsureSuccessStatusCode();
+
+        _testOutputHelper.WriteLine(deleteResponse.StatusCode.ToString());
+        Assert.Equal(HttpStatusCode.NoContent, deleteResponse.StatusCode);
+    }
+
+    [Fact]
+    public async Task GetSwCharactersById_NotFoundId()
+    {
+        var client = _factory.CreateClient();
+        var response = await client.GetAsync($"/sw-characters/100");
+        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
     }
 }

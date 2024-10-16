@@ -1,4 +1,17 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0f069f05_002D39e9_002D48c3_002Da73a_002D5e304c31cbdf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetSwCharacters_ReturnOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;ProjectFile&gt;FCC645C0-544B-4EEB-91BE-48169EA083D0/f:UnitTest1.cs&lt;/ProjectFile&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0f069f05_002D39e9_002D48c3_002Da73a_002D5e304c31cbdf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetSwCharacters_ReturnOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCC645C0-544B-4EEB-91BE-48169EA083D0::net8.0::UnitTestStarWars.BasicTests.DeleteCharacter_ReturnsOk&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCC645C0-544B-4EEB-91BE-48169EA083D0::net8.0::UnitTestStarWars.BasicTests.GetSwCharacters_ReturnOk&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCC645C0-544B-4EEB-91BE-48169EA083D0::net8.0::UnitTestStarWars.BasicTests.GetSwCharactersById_Found&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCC645C0-544B-4EEB-91BE-48169EA083D0::net8.0::UnitTestStarWars.BasicTests.AddCharacter_ReturnsCreated&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCC645C0-544B-4EEB-91BE-48169EA083D0::net8.0::UnitTestStarWars.BasicTests.UpdateCharacter_ReturnsOk&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCC645C0-544B-4EEB-91BE-48169EA083D0::net8.0::UnitTestStarWars.BasicTests.AddCharacter_DoesNotWorkBecauseOfADuplicate&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCC645C0-544B-4EEB-91BE-48169EA083D0::net8.0::UnitTestStarWars.BasicTests.GetSwCharactersById_NotFoundId&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ad48ff83_002D2071_002D4330_002D9951_002D585ae33d9fab/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetSwCharactersById_NotFoundId" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCC645C0-544B-4EEB-91BE-48169EA083D0::net8.0::UnitTestStarWars.BasicTests.GetSwCharactersById_NotFoundId&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
